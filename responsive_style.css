@@ -1,0 +1,101 @@
+.top {
+    /* Позиционирование */
+    display: grid;
+    grid-column: 1/ span 2;
+    justify-content: center;
+    align-items: center;
+    /* Оформление */
+    background-color: blanchedalmond;
+    /* Типографика */
+    font-size: 0.8em;
+}
+
+.content {
+    /* Позиционирование */
+    display: grid;
+    grid-template-rows: 43% 25% 25%;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    grid-gap: 20px;
+    /* Оформление */
+    background-color: aliceblue;
+    /* Типографика */
+    font-size: 1em;
+}
+
+.box_1 {
+    /* Позиционирование */
+    display: grid;
+    grid-row: 1; 
+    align-items: center;
+}
+
+.box_2 {
+    /* Позиционирование */
+    display: grid;
+    grid-row: 2; 
+    grid-auto-flow: column; 
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 20px;
+}
+
+.up_1, .up_2 {
+    /* Позиционирование */
+    display: grid;
+    align-items: center;
+    /* Оформление */
+    background-color: rgb(248, 190, 190);
+}
+
+.box_3 {
+    /* Позиционирование */
+    display: grid;
+    grid-row: 3; 
+    align-items: center;
+    /* Оформление */
+    background-color: rgb(248, 190, 190);
+}
+
+.sidebar {
+    /* Блочная модель */
+    display: grid;
+    text-align: center;
+    padding: 20px;
+    /* Оформление */
+    background-color: pink;
+    font-size: 1em;
+}
+
+.bottom {
+    /* Блочная модель */
+    display: grid;
+    grid-column: 1/ span 2;
+    justify-content: space-around; /* Центрируем по горизонтали */
+    grid-auto-flow: column; /* Устанавливаем направление автоматического размещения элементов в столбец */
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    align-items: stretch; /* Растягиваем элементы по вертикали */
+    grid-gap: 20px;
+    padding: 20px;
+    /* Оформление */
+    background-color: blanchedalmond;
+    font-size: 1em;
+}
+
+.text {
+    /* Блочная модель */
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.container {
+    /* Блочная модель */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10% 1fr 10%;
+    min-height: 90vh;
+    width: 100%;
+    /* Оформление */
+}
